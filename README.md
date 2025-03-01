@@ -22,6 +22,13 @@ To use this configuration, follow the steps below:
 
 1. **Clone the Repository:**
 
-   ```sh
-   git clone https://github.com/malikkemp/kickstart.nvim.git ~/.config/nvim
-   ```
+   > Linux or MacOS
+   > ```bash
+   > git clone https://github.com/malikkemp/kickstart.nvim.git ~/.config/nvim
+   > ```
+   
+   > Windows
+   > ```powershell
+   > git clone https://github.com/malikkemp/kickstart.nvim.git $env:LOCALAPPDATA\nvim
+   > ```
+
