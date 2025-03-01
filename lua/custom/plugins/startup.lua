@@ -3,7 +3,7 @@ return {
   dependencies = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-file-browser.nvim' },
   config = function()
     require('startup').setup {
-      theme = 'dashboard', -- or "dashboard", "evil", "startify", or customize your own theme
+      theme = 'evil', -- or "dashboard", "evil", "startify", or customize your own theme
       options = {
         header = {
           [[Welcome Back, Malik]],
