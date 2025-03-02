@@ -787,6 +787,17 @@ require('lazy').setup({
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       -- vim.cmd.colorscheme 'tokyonight-night'
       vim.cmd.colorscheme 'default'
+      -- enable transparency with telescope
+      -- Make Telescope transparent
+      vim.cmd [[highlight TelescopeNormal guibg=none ctermbg=none]]
+      vim.cmd [[highlight TelescopeBorder guibg=none ctermbg=none]]
+      vim.cmd [[highlight TelescopePrompt guibg=none ctermbg=none]]
+      vim.cmd [[highlight TelescopePromptBorder guibg=none ctermbg=none]]
+      vim.cmd [[highlight TelescopeResults guibg=none ctermbg=none]]
+      vim.cmd [[highlight TelescopeResultsBorder guibg=none ctermbg=none]]
+      vim.cmd [[highlight TelescopePreview guibg=none ctermbg=none]]
+      vim.cmd [[highlight TelescopePreviewBorder guibg=none ctermbg=none]]
+
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
     end,
@@ -874,10 +885,10 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
+  require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
   require 'custom.plugins.startup',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
@@ -887,7 +898,7 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
