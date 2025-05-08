@@ -1,5 +1,4 @@
-# My Custom Neovim Configuration
-
+# Kickstart.nvim
 Welcome to my customized Neovim configuration! This project is a fork of the [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) configuration, with added features and personal tweaks to enhance productivity and efficiency.
 
 ## Features
@@ -10,6 +9,7 @@ Welcome to my customized Neovim configuration! This project is a fork of the [ki
 - **Theming and UI Tweaks:** Customized themes and UI elements for a better visual experience.
 - **Integrated Tools:** Seamless integration with tools like Git, Markdown preview, and more.
 - **Performance Optimizations:** Tweaks and settings to ensure a smooth and responsive experience.
+- **Added File Tree:** Added file tree using the NeoTree Plugin.
 
 ## Prereq's
 
